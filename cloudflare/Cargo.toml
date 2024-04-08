@@ -1,7 +1,12 @@
 [package]
-name = "cloudflare"
+repository = "https://github.com/i18n-fork/cloudflare-rs.git"
+homepage = "https://github.com/i18n-fork/cloudflare-rs"
+name = "cfapi"
 version = "0.11.0"
-authors = ["Noah Kennedy <nkennedy@cloudflare.com>", "Jeff Hiner <jhiner@cloudflare.com>"]
+authors = [
+  "Noah Kennedy <nkennedy@cloudflare.com>",
+  "Jeff Hiner <jhiner@cloudflare.com>",
+]
 edition = "2018"
 description = "Rust library for the Cloudflare v4 API"
 keywords = ["cloudflare", "api", "client"]
@@ -17,10 +22,10 @@ spec = []
 
 [dependencies]
 chrono = { version = "0.4", default-features = false, features = [
-    "clock",
-    "serde",
-    "std",
-    "wasmbind",
+  "clock",
+  "serde",
+  "std",
+  "wasmbind",
 ] }
 http = "0.2"
 mockito = { version = "0.31", optional = true }
